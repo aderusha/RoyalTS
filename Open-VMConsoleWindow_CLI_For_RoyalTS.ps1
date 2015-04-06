@@ -5,6 +5,7 @@
 # PowerCLI: https://my.vmware.com/group/vmware/get-download?downloadGroup=PCLI600R1
 # Custom Field 1: managing vCenter server name
 # Connection name/URI must match the VM name in vCenter
+# Connection context credentials will require vCenter permissions to view the VM console
 #
 # Royal TS Configuration:
 # Right-click > Add > Command Task
@@ -22,7 +23,7 @@ if ($args.Length -ne 2) {
   Write-Host -foregroundcolor Yellow "`t`tCommand: `t`tC:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
   Write-Host -foregroundcolor Yellow "`t`tArguments: `t`t`"& `"`"<PATH_SAVED>\Open-VMConsoleWindow_CLI_For_RoyalTS.ps1`"`"`" `$URI`$ `$$CustomField1`$"
   Write-Host -foregroundcolor Yellow "`t`tWorking Directory: `tC:\Windows\System32\WindowsPowerShell\v1.0"
-  Write-Host "Don't forget to check the box 'Show in Favorites'"
+  Write-Host "Don't forget to check the box 'Show in favorite tasks menu'"
   Write-host "================================================="
   return
 }
