@@ -1,3 +1,18 @@
+# This script utilizes PowerCLI to launch a VMware Remote Console into a specified VM
+# in your default browser.
+#
+# Requirements:
+# PowerCLI: https://my.vmware.com/group/vmware/get-download?downloadGroup=PCLI600R1
+# Custom Field 1: managing vCenter server name
+# Connection name/URI must match the VM name in vCenter
+#
+# Royal TS Configuration:
+# Right-click > Add > Command Task
+# Display Name: PowerCLI: Launch VMRC
+# Command: %SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe
+# Arguments: "& ""<PATH_SAVED>\Open-VMConsoleWindow_CLI_For_RoyalTS.ps1""" $URI$ $CustomField1$
+# (Note that the mess of quotes above are correct and must be entered as shown)
+
 if ($args.Length -ne 2) {
   Write-host "================================================="
   Write-Host "Usage: In RoyalTS"
