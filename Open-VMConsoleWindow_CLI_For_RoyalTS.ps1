@@ -1,5 +1,4 @@
-# This script utilizes PowerCLI to launch a VMware Remote Console into a specified VM
-# in your default browser.
+# This script utilizes PowerCLI to launch a VMware Remote Console for a specified VM in your default browser.
 #
 # Requirements:
 # PowerCLI: https://my.vmware.com/group/vmware/get-download?downloadGroup=PCLI600R1
